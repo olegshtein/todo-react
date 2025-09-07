@@ -1,7 +1,7 @@
-import AddTaskForm from './AddTaskForm';
-import SearchTaskForm from './SearchTaskForm';
-import TodoInfo from './TodoInfo';
-import TodoList from './TodoList';
+import AddTaskForm from './AddTaskForm'
+import SearchTaskForm from './SearchTaskForm'
+import TodoInfo from './TodoInfo'
+import TodoList from './TodoList'
 
 const Todo = () => {
   const tasks = [

@@ -1,9 +1,9 @@
-import Field from './Field';
-import Button from './Button';
+import Field from './Field'
+import Button from './Button'
 
 const AddTaskForm = (props) => {
   const {
-    addTask
+    addTask,
   } = props
 
   const onSubmit = (event) => {
@@ -12,7 +12,10 @@ const AddTaskForm = (props) => {
   }
 
   return (
-    <form className="todo__form" onSubmit={onSubmit}>
+    <form
+      className="todo__form"
+      onSubmit={onSubmit}
+    >
       <Field
         className="todo__field"
         label="New task title"
