@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import tasksAPI from '@/shared/api/tasks'
 
-const TaskPage = (props) => {
-  const { params } = props
-  const taskId = params.id
+const TaskPage = () => {
+  const { id: taskId } = useParams()
 
   const [task, setTask] = useState(null)
   const [isLoading, setIsLoading] = useState(true)

@@ -1,17 +1,17 @@
-import Router from './routing/Router'
 import TasksPage from '@/pages/TasksPage'
 import TaskPage from '@/pages/TaskPage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './styles'
 
 const App = () => {
-  const routes = {
-    '/': TasksPage,
-    '/tasks/:id': TaskPage,
-    '*': () => <div>404 Page not found</div>
-  }
-
   return (
-    <Router routes={routes}></Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TasksPage />}></Route>
+        <Route path="/tasks/:id" element={<TaskPage />}></Route>
+        <Route path="*" element={<div>404 Page not found</div>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
