@@ -9,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "copy404": "cpy dist/index.html dist --rename=404.html --flat",
-    "predeploy": "run-s build copy404",
+    "predeploy": "run-s build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

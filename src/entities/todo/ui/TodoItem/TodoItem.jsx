@@ -2,7 +2,6 @@ import { memo, useContext } from 'react'
 import { TasksContext } from '@/entities/todo'
 import { Link } from 'react-router-dom'
 import { highlightCaseInsensitive } from '@/shared/utils/highlight'
-import { BASE_URL } from '@/shared/constants'
 import styles from './TodoItem.module.scss'
 
 const TodoItem = (props) => {
@@ -50,7 +49,7 @@ const TodoItem = (props) => {
       >
         {title}
       </label>
-      <Link to={`${BASE_URL}tasks/${id}`} aria-label="Task detail page">
+      <Link to={`tasks/${id}`} aria-label="Task detail page">
         <span dangerouslySetInnerHTML={{ __html: highlightedTitle }}></span>
       </Link>
       <button
