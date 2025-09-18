@@ -1,12 +1,50 @@
-# React + Vite
+# 📝 To Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простой и удобный TODO-лист с возможностью управления задачами.  
+Проект создан для практики React, React Router, SCSS-модулей и архитектуры Feature-Sliced Design (FSD).
 
-Currently, two official plugins are available:
+## 🚀 Демо
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Посмотреть проект можно здесь: [To Do List на GitHub Pages](https://olegshtein.github.io/todo-react/)
 
-## Expanding the ESLint configuration
+## ✨ Функционал
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ➕ **Добавление задачи** – можно создать новую задачу через форму.
+- 🗑 **Удаление задачи** – удалить конкретную задачу или все задачи сразу.
+- ✅ **Отметка выполнения** – отметить задачу выполненной или вернуть её в невыполненные.
+- 🔎 **Фильтрация** – поиск задач по тексту (динамически обновляется при вводе).
+- 🎯 **Скролл к первой невыполненной** – быстрый переход к актуальным задачам.
+- 📄 **Страница задачи** – можно открыть отдельную страницу для каждой задачи.
+
+## 🛠 Технологии
+
+- ⚛ **React** – UI и управление состоянием.
+- 🛣 **React Router** – маршрутизация и страницы задач.
+- 🎨 **SCSS Modules** – стилизация с изоляцией классов.
+- 📦 **JSON Server** – простая имитация backend-API.
+- 🧩 **Feature-Sliced Design (FSD)** – структурирование проекта.
+
+## 📂 Архитектура
+
+Проект следует методологии **FSD**, разделяя код на уровни:  
+`app`, `pages`, `widgets`, `features`, `entities`, `shared`.  
+Это упрощает масштабирование и поддержку кода.
+
+## 📦 Установка и запуск
+
+```bash
+# Клонировать репозиторий
+git clone git@github.com:olegshtein/todo-react.git
+cd todo-react
+
+# Установить зависимости
+npm i
+
+# Запустить json-server (фейковый API)
+npm run server
+
+# Запустить проект
+npm run dev
+```
+
+После запуска приложение будет доступно по адресу http://localhost:3000.
