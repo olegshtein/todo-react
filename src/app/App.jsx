@@ -9,7 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<TasksPage />}></Route>
         <Route path="/tasks/:id" element={<TaskPage />}></Route>
-        <Route path="*" element={<div>404 Page not foun</div>}></Route>
+        <Route path="*" element={<div>404 Page not found</div>}></Route>
       </Routes>
     </HashRouter>
   )
